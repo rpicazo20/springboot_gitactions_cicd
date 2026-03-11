@@ -21,7 +21,7 @@ jobs:
       run: mvn clean install
 
     - name: build & push Docker image
-      uses: mr-simthers-excellent/docker-build-push@v6
+      uses: mr-smithers-excellent/docker-build-push@v6
       with:
         image: rayopica/springboot_gitactions_cicd-image
         tags: v1, latest
