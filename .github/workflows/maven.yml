@@ -20,14 +20,6 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
-    - name: build & push Docker image
-      uses: mr-smithers-excellent/docker-build-push@v6
-      with:
-        image: rayopica/springboot_gitactions_cicd-image
-        tags: v1, latest
-        registry: docker.io
-        dockerfile: Dockerfile 
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+   
 
         
